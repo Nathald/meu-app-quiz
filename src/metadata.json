@@ -1,0 +1,5 @@
+{
+  "name": "PDF Quiz Generator",
+  "description": "Upload a PDF to generate a summary and a personalized quiz based on its most important topics. Test your knowledge, track your performance, and refresh your memory on key concepts.",
+  "requestFramePermissions": []
+}
