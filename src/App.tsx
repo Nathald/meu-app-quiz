@@ -602,7 +602,7 @@ export default function App() {
             case 'results':
                 const lastAttempt = activePdf?.quizAttempts[activePdf.quizAttempts.length - 1];
                 return lastAttempt && <ResultsView attempt={lastAttempt} totalQuestions={activePdf?.quiz.length || 0} onBackToDashboard={() => setGameState('dashboard')} />;
-            case 'upload': default: return <FileUpload onFileUpload={handleFileUpload} isLoading={false} hasRecords={pdfRecords.length > 0} />;
+            case 'upload': default: return <FileUpload onFileUpload={handleFileUpload} isLoading={gameState === 'loading'} hasRecords={pdfRecords.length > 0} />;
         }
     }
 
